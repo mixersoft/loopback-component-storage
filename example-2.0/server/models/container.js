@@ -3,11 +3,25 @@
 /**
   * @ngdoc function
   * @name loopback-component-storage:container
-  * @description Add remote hooks for Model:container
-
-	npm install archiver lodash --save
-
+  * @description Add GET downloadContainer to REST API for Model:container
+  *   use node-archiver to archive files for download
+  *   see: https://github.com/archiverjs/node-archiver/blob/master/examples/express.js
  */
+
+ /**
+  * Setup & Testing
+  * 
+  * // install strongloop, see: http://docs.strongloop.com/display/public/LB/Installing+StrongLoop
+  * cd ./example-2.0
+  * npm install
+  * node server/server
+  * // open browser to: http;//localhost:3000/explorer
+  * // click on container > GET downloadContainer
+  * // container=container1, files=all
+  * // click 'try it out!'
+  * 
+ */ 
+
 var Archiver, _, factory, handler, loopback_component_storage_path, request;
 
 _ = require('lodash');
