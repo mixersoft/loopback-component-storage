@@ -1,19 +1,26 @@
 {
   "name": "loopback-example-storage",
-  "version": "0.0.0",
+  "description": "add downloadContainer with archivejs to Loopback Storage Service",
+  "version": "2.0.0",
   "main": "server/server.js",
   "scripts": {
     "pretest": "jshint ."
   },
   "dependencies": {
+    "archiver": "^0.14.3",
     "compression": "^1.0.3",
     "errorhandler": "^1.1.1",
+    "lodash": "^3.2.0",
     "loopback": "^2.0.0",
     "loopback-boot": "^2.0.0",
     "loopback-component-storage": "~1.0.5",
     "loopback-datasource-juggler": "^2.7.0",
     "serve-favicon": "^2.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mixersoft/loopback-component-storage"
+  },  
   "optionalDependencies": {
     "loopback-explorer": "^1.1.0"
   }
